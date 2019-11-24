@@ -2,12 +2,12 @@ led.enable(false)
 pins.analogWritePin(AnalogPin.P6, 0)
 pins.analogWritePin(AnalogPin.P8, 0)
 pins.analogWritePin(AnalogPin.P9, 0)
+
+
+
+
+
 basic.forever(function () {
-  
-  
-  
-  
-  
     for (let index = 0; index <= 3071; index++) {
         if (index < 2046) {
             if (index <= 1023) {
