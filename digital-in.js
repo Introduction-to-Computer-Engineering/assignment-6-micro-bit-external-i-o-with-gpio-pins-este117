@@ -29,9 +29,7 @@ class Lights {
     }
   
   digitalInputPin() {
- 
-         //checks if input button has been set to 1
-         if (pins.digitalReadPin(DigitalPin.P10) == 1) {
+         if (pins.digitalReadPin(DigitalPin.P0) == 1) {
              //slowly lights led connected to P6
              for (let index = 0; index <= 3071; index++) {
                  pins.analogWritePin(AnalogPin.P6, index);
@@ -45,8 +43,7 @@ class Lights {
              //If input button has been set to 0, doesn't light P6
              pins.analogWritePin(AnalogPin.P6, 0);
          }
-  } 
-  
+    }
 }
 basic.forever(function () {
     pins.analogWritePin(AnalogPin.P3, 0);
