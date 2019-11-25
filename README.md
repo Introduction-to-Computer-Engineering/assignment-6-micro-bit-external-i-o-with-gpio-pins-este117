@@ -89,4 +89,4 @@ This assignment asks you to use the GPIO pins of the micro:bit to achieve extern
 
 ### Description
 
-TODO: Your project description, in your own words. _Clarity and grammatical correctness are required._
+
