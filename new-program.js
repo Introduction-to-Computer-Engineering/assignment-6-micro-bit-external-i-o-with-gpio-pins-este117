@@ -7,23 +7,23 @@ class Lights {
             control.waitMicros(750) 
         }
         for (let index = 0; index <= 3071; index++) {
-            pins.analogWritePin(AnalogPin.P2, index)
+            pins.analogWritePin(AnalogPin.P4, index)
             control.waitMicros(750)
         }
         for (let index = 0; index <= 3071; index++) {
-            pins.analogWritePin(AnalogPin.P3, index);
-            control.waitMicros(750)
-        }
-        for (let index = 3071; index >= 0; index--) {
-            pins.analogWritePin(AnalogPin.P0, index);
-            control.waitMicros(750)
-        }
-        for (let index = 3071; index >= 0; index--) {
-            pins.analogWritePin(AnalogPin.P2, index)
+            pins.analogWritePin(AnalogPin.P10, index);
             control.waitMicros(750)
         }
         for (let index = 3071; index >= 0; index--) {
             pins.analogWritePin(AnalogPin.P3, index);
+            control.waitMicros(750)
+        }
+        for (let index = 3071; index >= 0; index--) {
+            pins.analogWritePin(AnalogPin.P4, index)
+            control.waitMicros(750)
+        }
+        for (let index = 3071; index >= 0; index--) {
+            pins.analogWritePin(AnalogPin.P10, index);
             control.waitMicros(750)
         }
     }
